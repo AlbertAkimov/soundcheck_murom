@@ -7,11 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea6f57f5-5f6c-4803-8a07-024eb7faa4bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/soundcheck-1.0.war" afterPath="$PROJECT_DIR$/target/soundcheck-1.0.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/postgresql.properties" afterPath="$PROJECT_DIR$/src/main/resources/postgresql.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/postgresql.properties" afterPath="$PROJECT_DIR$/target/classes/postgresql.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/postgresql.properties" afterPath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/postgresql.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -397,7 +394,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506245109932</updated>
-      <workItem from="1506245112971" duration="5632000" />
+      <workItem from="1506245112971" duration="5804000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy">
       <created>1506249037437</created>
@@ -413,11 +410,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506249932442</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Deploy">
+      <created>1506250761845</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1506250761845</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5632000" />
+    <option name="totallyTimeSpent" value="5804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
