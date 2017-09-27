@@ -31,11 +31,16 @@
 
     <style>
         body {
-            background: url(../../resources/img/mzkds.jpg) no-repeat;
-            -moz-background-size: 100%; /* Firefox 3.6+ */
-            -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-            -o-background-size: 100%; /* Opera 9.6+ */
-            background-size: 100%; /* Современные браузеры */
+            background: url(../../resources/img/mzkds.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #333646;
+/*            -moz-background-size: 100%; !* Firefox 3.6+ *!
+            -webkit-background-size: 100%; !* Safari 3.1+ и Chrome 4.0+ *!
+            -o-background-size: 100%; !* Opera 9.6+ *!
+            background-size: 100%; !* Современные браузеры *!*/
         }
     </style>
 
@@ -58,7 +63,7 @@
 
             <button class="btn btn-lg btn-primary btn-block" type="submit">Войти</button>
             <h4 class="text-center"><a href="${contextPath}/registration">Регистрация</a></h4>
-            <h4 class="text-center"><a href="${contextPath}/list">Список работ</a></h4>
+            <h4 class="text-center"><a style="color: #16781f" href="${contextPath}/list">Список работ</a></h4>
         </div>
 
     </form>

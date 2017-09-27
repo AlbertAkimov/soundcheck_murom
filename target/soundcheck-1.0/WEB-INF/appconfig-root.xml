@@ -14,5 +14,5 @@
 
     <context:component-scan base-package="net.space.*"/>
 
-    <context:property-placeholder location="classpath:postgresql.properties"/>
+    <context:property-placeholder location="classpath:database.properties"/>
 </beans>

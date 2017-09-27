@@ -650,45 +650,16 @@
 <script src="${contextPath}/resources/soundcheck/js/sonorama.js"></script>
 <script src="${contextPath}/resources/datepicker/build/jquery.datetimepicker.full.min.js"></script>
 <script src="${contextPath}/resources/soundcheck/js/form/ajax.js"></script>
-<%--<script>
-    $('#endTimes').datetimepicker({
+<script>
+    $('#endTime').datetimepicker({
         datepicker:false,
         format:'H:i'
     });
-    $('#startTimes').datetimepicker({
+    $('#startTime').datetimepicker({
         datepicker:false,
         format:'H:i'
     });
 
-    jQuery.datetimepicker.setLocale('de');
-
-    jQuery('#date-picker').datetimepicker({
-        i18n:{
-            de:{
-                months:[
-                    'Januar','Februar','März','April',
-                    'Mai','Juni','Juli','August',
-                    'September','Oktober','November','Dezember'
-                ],
-                dayOfWeek:[
-                    "So.", "Mo", "Di", "Mi",
-                    "Do", "Fr", "Sa."
-                ]
-            }
-        },
-        timepicker:false,
-        format:'d-m-Y'
-    });
-</script>--%>
-<%--<script>
-    $("#test").datepicker({
-        // Можно выбрать тольо даты, идущие за сегодняшним днем, включая сегодня
-        minDate: new Date()
-    })
-</script>--%>
-
-<script type="text/javascript">
-    $('.clockpicker').clockpicker();
 </script>
 
 </body>

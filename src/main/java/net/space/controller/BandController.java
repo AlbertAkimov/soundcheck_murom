@@ -57,7 +57,7 @@ public class BandController {
     public String removeBand(@PathVariable("id") int id) {
         this.service.removeBand(id);
 
-        return "redirect:/bands";
+        return "redirect:/admin";
     }
 
     @RequestMapping(value = "edit/{id}")
@@ -65,7 +65,7 @@ public class BandController {
         model.addAttribute("band", this.service.getBandById(id));
         model.addAttribute("listBand", this.service.lists());
 
-        return "bands";
+        return "admin";
     }
 }
 
