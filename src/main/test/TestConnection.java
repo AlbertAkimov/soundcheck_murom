@@ -1,4 +1,3 @@
-import javafx.beans.binding.When;
 import org.junit.Assert;
 import org.junit.Test;
 

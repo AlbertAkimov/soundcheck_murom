@@ -23,6 +23,7 @@ public class Band {
     private int id;
 
     @Column(name = "CREATE_DATE")
+    @Temporal(TemporalType.DATE)
     private Date createDate;
 
     @Column(name = "DATE_BAND")

@@ -63,7 +63,7 @@
 
             <button class="btn btn-lg btn-primary btn-block" type="submit">Войти</button>
             <h4 class="text-center"><a href="${contextPath}/registration">Регистрация</a></h4>
-            <h4 class="text-center"><a style="color: #16781f" href="${contextPath}/list">Список работ</a></h4>
+            <h4 class="text-center"><a  href="${contextPath}/list">Список работ</a></h4>
         </div>
 
     </form>
