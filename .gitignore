@@ -1,0 +1,7 @@
+
+.gitignore
+target/generated-sources/
+target/generated-test-sources/
+target/soundcheck-1.0/images/
+.idea
+README.md
