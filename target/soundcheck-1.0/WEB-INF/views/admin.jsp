@@ -36,17 +36,18 @@
     </c:if>
 </div>
 
-<h2> Подробная таблица рабочего времени</h2>
+<div align="center">
+    <h2> Подробная таблица рабочего времени</h2>
+</div>
 
 <div class="container">
-    <button class="btn btn-success" onclick="get_ajax()">Показать мои</button>
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
     <div id="error-user"></div>
     <div id="testing">
         <table class="table table-bordered table-hover table-striped table-condensed">
             <tr>
                 <th width="30">№</th>
-                <th width="30">Юзверг</th>
+                <th width="30">Пользователь</th>
                 <th width="40">Дата создания</th>
                 <th width="120">Имя группы</th>
                 <th width="40">Дата</th>
@@ -71,7 +72,7 @@
                     <td id="t-price">${band.price}</td>
                     <td id="t-comment">${band.comment}</td>
                     <td><a href="<c:url value="/edit/${band.id}" />">Изменить</a> </td>
-                    <td><a href="<c:url value="/remove/${band.id}" />">Изменить</a> </td>
+                    <td><a href="<c:url value="/remove/${band.id}" />">Удалить</a> </td>
                 </tr>
             </c:forEach>
         </table>

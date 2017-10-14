@@ -104,7 +104,8 @@ public class BandDaoImpl implements BandDao {
     @SuppressWarnings("unchecked")
     public List<List<Band>> lists() {
         Session session = this.sessionFactory.getCurrentSession();
-        List<Band> listBand = session.createQuery(Queries.band).list();
+        List<Band> listBand = session.createSQLQuery(Queries.ACTUAL_DATE_OF_BAND)
+                .addEntity(Band.class).list();
 
         LOGGER.info("List band successfully loaded.");
 
