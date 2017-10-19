@@ -24,7 +24,12 @@
     <title>Admin</title>
 
     <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="${contextPath}/resources/datepicker/jquery.datetimepicker.css"/>
+    <script src="${contextPath}/resources/datepicker/jquery.js"></script>
+
+    <link href="${contextPath}/resources/newdatepicker/datepicker.min.css" rel="stylesheet" type="text/css">
+    <script src="${contextPath}/resources/newdatepicker/datepicker.min.js"></script>
 </head>
 
 <body>
@@ -116,7 +121,7 @@
                     </form:label>
                 </td>
                 <td>
-                    <form:input path="dateBand" cssClass="form-control" />
+                    <form:input path="dateBand" class="datepicker-here"  data-date-format="yyyy/mm/dd" cssClass="form-control"/>
                 </td>
             </tr>
             <tr>
@@ -126,7 +131,7 @@
                     </form:label>
                 </td>
                 <td>
-                    <form:input path="startTime" cssClass="form-control"/>
+                    <form:input path="startTime" cssClass="form-control" id="startTime"/>
                 </td>
             </tr>
             <tr>

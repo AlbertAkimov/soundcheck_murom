@@ -28,7 +28,7 @@ public class Band {
 
     @Column(name = "DATE_BAND")
     @Temporal(TemporalType.DATE)
-    //@DateTimeFormat(iso = DateTimeFormat.ISO.DATE, pattern = "yyyy-MM-dd")
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE, pattern = "yyyy-MM-dd")
     private Date dateBand;
 
     @Column(name = "DAY")
