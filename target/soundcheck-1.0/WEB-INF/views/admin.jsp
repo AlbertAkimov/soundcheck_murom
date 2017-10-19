@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
@@ -23,6 +24,7 @@
     <title>Admin</title>
 
     <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resources/datepicker/jquery.datetimepicker.css"/>
 </head>
 
 <body>
@@ -59,7 +61,7 @@
                 <th width="50">Изменить</th>
                 <th width="50">Удалить</th>
             </tr>
-            <c:forEach items="${adminList}" var="band">
+            <c:forEach items="${listBand}" var="band">
                 <tr>
                     <td id="t-id">${band.id}</td>
                     <td id="t-user-id">${band.userID}</td>
@@ -79,9 +81,96 @@
     </div>
 </div>
 
+<div class="container">
+    <c:url var="addAction" value="/band/add"/>
+
+    <form:form action="${addAction}" commandName="band">
+        <table>
+            <c:if test="${!empty band.nameBand}">
+                <tr>
+                    <td>
+                        <form:label path="id">
+                            <spring:message text="ID"/>
+                        </form:label>
+                    </td>
+                    <td>
+                        <form:input path="id" readonly="true" size="8" disabled="true"/>
+                        <form:hidden path="id"/>
+                    </td>
+                </tr>
+            </c:if>
+            <tr>
+                <td>
+                    <form:label path="nameBand">
+                        <spring:message text="Имя группы"/>
+                    </form:label>
+                </td>
+                <td>
+                    <form:input path="nameBand" cssClass="form-control"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form:label path="dateBand">
+                        <spring:message text="Дата работы"/>
+                    </form:label>
+                </td>
+                <td>
+                    <div class="datepicker-here">
+                        <form:input path="dateBand" cssClass="form-control"/>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form:label path="startTime">
+                        <spring:message text="Время начала"/>
+                    </form:label>
+                </td>
+                <td>
+                    <form:input path="startTime" cssClass="form-control" id="startTime"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form:label path="endTime">
+                        <spring:message text="Время завершения"/>
+                    </form:label>
+                </td>
+                <td>
+                    <form:input path="endTime" cssClass="form-control"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <c:if test="${!empty band.dateBand}">
+                        <input type="submit" class="btn btn-lg btn-primary btn-block"
+                               value="<spring:message text="Редактировать"/>"/>
+                    </c:if>
+                    <c:if test="${empty band.dateBand}">
+                        <input type="submit" class="btn btn-lg btn-primary btn-block"
+                               value="<spring:message text="Добавить"/>"/>
+                    </c:if>
+                </td>
+            </tr>
+        </table>
+    </form:form>
+</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
+<script>
+    $('#endTime').datetimepicker({
+        datepicker:false,
+        format:'H:i'
+    });
+    $('#startTime').datetimepicker({
+        datepicker:false,
+        format:'H:i'
+    });
+
+</script>
 
 </body>
 </html>

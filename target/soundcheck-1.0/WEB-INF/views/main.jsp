@@ -121,6 +121,7 @@
             <li><a href="#anchor05">Контакты</a></li>
             <li><a href="${pageContext.request.contextPath}/personal-page">${pageContext.request.userPrincipal.name}</a></li>
             <li><a onclick="document.forms['logoutForm'].submit()" href="#" style="color: #b5111a">Выйти</a></li>
+            <li><a href="${pageContext.request.contextPath}/admin">Управление</a></li>
         </ul>
     </nav>
 

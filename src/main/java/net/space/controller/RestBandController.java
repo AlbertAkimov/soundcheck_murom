@@ -74,7 +74,7 @@ public class RestBandController {
             }
 
             else
-                service.updateBand(band);
+                service.updateBand(BandDateUtils.breakADate(band));
         }
 
         return ResponseEntity.ok(jr);

@@ -45,33 +45,12 @@ public class BandController {
         return "fulllist";
     }
 
-    @RequestMapping(value = "/admin", method = RequestMethod.GET)
-    public String adminList(Model model) {
-        model.addAttribute("adminList", this.service.getListObject());
-        return "admin";
-    }
-
     @RequestMapping(value = "/personal-page", method = RequestMethod.GET)
     public String getPersonalPage(Model model) {
         List<Band> bandList = this.service.getPersonalList();
         model.addAttribute("listBand", bandList);
 
         return "personalPage";
-    }
-
-    @RequestMapping(value = "/remove/{id}")
-    public String removeBand(@PathVariable("id") int id) {
-        this.service.removeBand(id);
-
-        return "redirect:/admin";
-    }
-
-    @RequestMapping(value = "edit/{id}")
-    public String editBand(@PathVariable("id") int id, Model model) {
-        model.addAttribute("band", this.service.getBandById(id));
-        model.addAttribute("listBand", this.service.lists());
-
-        return "admin";
     }
 }
 
