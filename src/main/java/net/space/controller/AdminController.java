@@ -58,7 +58,7 @@ public class AdminController {
     @RequestMapping(value = "edit/{id}")
     public String editBand(@PathVariable("id") int id, Model model) {
         model.addAttribute("band", this.service.getBandById(id));
-        model.addAttribute("listBand", this.service.lists());
+        model.addAttribute("listBand", this.service.getListObject());
 
         return "admin";
     }

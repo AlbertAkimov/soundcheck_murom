@@ -18,22 +18,43 @@
     <meta charset="utf-8">
     <meta name="_csrf" content="${_csrf.token}">
     <meta name="_csrf_header" content="${_csrf.headerName}">
-    <link href="${contextPath}/resources/soundcheck/css/bootstrap.min.css" rel="stylesheet">
+<%--
+    <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${contextPath}/resources/css/datepicker.css" rel="stylesheet">
+    <script src="${contextPath}/resources/js/bootstrap-datepicker.js"></script>
+    <script src="${contextPath}/resources/js/moment-with-locales.min.js"></script>
+    <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
+    <script src="${contextPath}/resources/js/main.js"></script>--%>
 
+
+    <!-- Latest compiled and minified CSS -->
+<%--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="${contextPath}/resources/css/bootstrap-datepicker.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="${contextPath}/resources/js/bootstrap-datepicker.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
+    </script>--%>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
     <title>Admin</title>
 
-    <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="${contextPath}/resources/datepicker/jquery.datetimepicker.css"/>
-    <script src="${contextPath}/resources/datepicker/jquery.js"></script>
-
-    <link href="${contextPath}/resources/newdatepicker/datepicker.min.css" rel="stylesheet" type="text/css">
-    <script src="${contextPath}/resources/newdatepicker/datepicker.min.js"></script>
 </head>
 
 <body>
-<div class="container">
+<div class="container-fluid">
     <c:if test="${pageContext.request.userPrincipal.name != null}">
         <form id="logoutForm" method="post" action="${contextPath}/logout">
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
@@ -47,7 +68,8 @@
     <h2> Подробная таблица рабочего времени</h2>
 </div>
 
-<div class="container">
+<c:if test="${!empty listBand}">
+<div class="container-fluid">
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
     <div id="error-user"></div>
     <div id="testing">
@@ -66,6 +88,7 @@
                 <th width="50">Изменить</th>
                 <th width="50">Удалить</th>
             </tr>
+
             <c:forEach items="${listBand}" var="band">
                 <tr>
                     <td id="t-id">${band.id}</td>
@@ -85,8 +108,9 @@
         </table>
     </div>
 </div>
+</c:if>
 
-<div class="container">
+<div class="container-fluid">
     <c:url var="addAction" value="/band/add"/>
 
     <form:form action="${addAction}" commandName="band">
@@ -99,7 +123,18 @@
                         </form:label>
                     </td>
                     <td>
-                        <form:input path="id" readonly="true" size="8" disabled="true"/>
+                        <%--<form:input path="id" readonly="true" size="8" disabled="true"/>--%>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class='input-group date'>
+                                                <form:input type='text' class="form-control" path="id" readonly="true" size="8" disabled="true"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         <form:hidden path="id"/>
                     </td>
                 </tr>
@@ -111,7 +146,21 @@
                     </form:label>
                 </td>
                 <td>
-                    <form:input path="nameBand" cssClass="form-control"/>
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class='input-group date'>
+                                    <form:input type='text' class="form-control"  path="nameBand"/>
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar">
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </td>
             </tr>
             <tr>
@@ -121,7 +170,21 @@
                     </form:label>
                 </td>
                 <td>
-                    <form:input path="dateBand" class="datepicker-here"  data-date-format="yyyy/mm/dd" cssClass="form-control"/>
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class='input-group date' id='datetimepicker2'>
+                                    <form:input type='text' class="form-control"  path="dateBand"/>
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar">
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </td>
             </tr>
             <tr>
@@ -131,7 +194,20 @@
                     </form:label>
                 </td>
                 <td>
-                    <form:input path="startTime" cssClass="form-control" id="startTime"/>
+                    <div class="container">
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='datetimepicker3'>
+                                        <form:input path="startTime" type='text' class="form-control" />
+                                            <span class="input-group-addon">
+                                         <span class="glyphicon glyphicon-time"></span>
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </td>
             </tr>
             <tr>
@@ -141,17 +217,30 @@
                     </form:label>
                 </td>
                 <td>
-                    <form:input path="endTime" cssClass="form-control"/>
+                    <div class="container">
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='datetimepicker4'>
+                                        <form:input path="endTime" type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                         <span class="glyphicon glyphicon-time"></span>
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
                     <c:if test="${!empty band.dateBand}">
-                        <input type="submit" class="btn btn-lg btn-primary btn-block"
+                        <input type="submit" class="btn btn-lg btn-primary"
                                value="<spring:message text="Редактировать"/>"/>
                     </c:if>
                     <c:if test="${empty band.dateBand}">
-                        <input type="submit" class="btn btn-lg btn-primary btn-block"
+                        <input type="submit" class="btn btn-lg btn-primary"
                                value="<spring:message text="Добавить"/>"/>
                     </c:if>
                 </td>
@@ -162,20 +251,33 @@
 </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="${contextPath}/resources/js/bootstrap.min.js"></script>
-<script>
-    $('#endTime').datetimepicker({
-        datepicker:false,
-        format:'H:i'
-    });
-    $('#startTime').datetimepicker({
-        datepicker:false,
-        format:'H:i'
-    });
-
-</script>
+<%--Test datepicker--%>
 
 </body>
+
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker2').datetimepicker({
+            format: 'YYYY/MM/DD'
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker3').datetimepicker({
+            format: 'HH:mm'
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker4').datetimepicker({
+            format: 'HH:mm'
+        });
+    });
+</script>
+
 </html>
 
