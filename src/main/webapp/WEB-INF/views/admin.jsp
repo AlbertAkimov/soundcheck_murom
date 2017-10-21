@@ -54,7 +54,7 @@
 </head>
 
 <body>
-<div class="container-fluid">
+<div class="container">
     <c:if test="${pageContext.request.userPrincipal.name != null}">
         <form id="logoutForm" method="post" action="${contextPath}/logout">
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
@@ -69,11 +69,11 @@
 </div>
 
 <c:if test="${!empty listBand}">
-<div class="container-fluid">
+<div class="container">
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
     <div id="error-user"></div>
     <div id="testing">
-        <table class="table table-bordered table-hover table-striped table-condensed">
+        <table class="table table-bordered table-hover table-striped table-condensed" align="center">
             <tr>
                 <th width="30">№</th>
                 <th width="30">Пользователь</th>
@@ -110,11 +110,11 @@
 </div>
 </c:if>
 
-<div class="container-fluid">
+<div class="container">
     <c:url var="addAction" value="/band/add"/>
 
     <form:form action="${addAction}" commandName="band">
-        <table>
+        <table align="center">
             <c:if test="${!empty band.nameBand}">
                 <tr>
                     <td>
