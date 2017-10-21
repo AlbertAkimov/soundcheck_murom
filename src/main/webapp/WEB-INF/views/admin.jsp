@@ -5,7 +5,7 @@
   Time: 12:38 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
@@ -18,30 +18,9 @@
     <meta charset="utf-8">
     <meta name="_csrf" content="${_csrf.token}">
     <meta name="_csrf_header" content="${_csrf.headerName}">
-<%--
-    <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
-    <link href="${contextPath}/resources/css/datepicker.css" rel="stylesheet">
-    <script src="${contextPath}/resources/js/bootstrap-datepicker.js"></script>
-    <script src="${contextPath}/resources/js/moment-with-locales.min.js"></script>
-    <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
-    <script src="${contextPath}/resources/js/main.js"></script>--%>
-
-
-    <!-- Latest compiled and minified CSS -->
-<%--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="${contextPath}/resources/css/bootstrap-datepicker.min.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="${contextPath}/resources/js/bootstrap-datepicker.min.js"></script>
-
-    <script type="text/javascript">
-        $(function () {
-            $('#datetimepicker1').datetimepicker();
-        });
-    </script>--%>
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link href="${contextPath}/resources/css/common.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -79,9 +58,9 @@
                 <th width="30">Пользователь</th>
                 <th width="40">Дата создания</th>
                 <th width="120">Имя группы</th>
-                <th width="40">Дата</th>
-                <th width="50">Время(с)</th>
-                <th width="50">Время(до)</th>
+                <th width="40">Дата работы</th>
+                <th width="50">Начало</th>
+                <th width="50">Завершение</th>
                 <th width="50">Кол-во часов</th>
                 <th width="60">Сумма</th>
                 <th width="100">Деятельность</th>
@@ -177,12 +156,14 @@
                                 <div class='input-group date' id='datetimepicker2'>
                                     <form:input type='text' class="form-control"  path="dateBand"/>
                                     <span class="input-group-addon">
-                                        <span class="glyphicon glyphicon-calendar">
-                                        </span>
+                                        <span class="glyphicon glyphicon-calendar"></span>
                                     </span>
                                 </div>
                             </div>
                         </div>
+                        </div>
+                        <div class="has-error">
+                            <form:errors path="dateBand"></form:errors>
                         </div>
                     </div>
                 </td>
@@ -201,11 +182,14 @@
                                     <div class='input-group date' id='datetimepicker3'>
                                         <form:input path="startTime" type='text' class="form-control" />
                                             <span class="input-group-addon">
-                                         <span class="glyphicon glyphicon-time"></span>
-                                    </span>
+                                                <span class="glyphicon glyphicon-time"></span>
+                                            </span>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="has-error">
+                            <form:errors path="startTime"></form:errors>
                         </div>
                     </div>
                 </td>
@@ -224,11 +208,14 @@
                                     <div class='input-group date' id='datetimepicker4'>
                                         <form:input path="endTime" type='text' class="form-control" />
                                         <span class="input-group-addon">
-                                         <span class="glyphicon glyphicon-time"></span>
-                                    </span>
+                                            <span class="glyphicon glyphicon-time"></span>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="has-error">
+                            <form:errors path="endTime"></form:errors>
                         </div>
                     </div>
                 </td>
@@ -236,12 +223,19 @@
             <tr>
                 <td colspan="2">
                     <c:if test="${!empty band.dateBand}">
+                        <div class="button-move">
                         <input type="submit" class="btn btn-lg btn-primary"
                                value="<spring:message text="Редактировать"/>"/>
+                            <form action="${pageContext.request.contextPath}/canceled">
+                                <input type="submit" class="btn btn-primary" value="<spring:message text="Отмена"/>"/>
+                            </form>
+                        </div>
                     </c:if>
                     <c:if test="${empty band.dateBand}">
+                        <div class="button-move">
                         <input type="submit" class="btn btn-lg btn-primary"
-                               value="<spring:message text="Добавить"/>"/>
+                               value="<spring:message text="Добавить"/>" align="center"/>
+                        </div>
                     </c:if>
                 </td>
             </tr>

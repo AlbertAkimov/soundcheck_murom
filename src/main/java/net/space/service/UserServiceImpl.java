@@ -30,6 +30,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
+    @Autowired
+    private SecurityService securityService;
+
     @Override
     public void save(User user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
@@ -42,5 +45,16 @@ public class UserServiceImpl implements UserService {
     @Override
     public User findByUsername(String username) {
         return userDao.findByUsername(username);
+    }
+
+    @Override
+    public User getCurrentLoggedUser() {
+        String currentLoggedUsername = this.securityService.findLoggedInUsername();
+        return findByUsername(currentLoggedUsername);
+    }
+
+    @Override
+    public long getIDCurrentLoggedUser(User user) {
+        return user.getId();
     }
 }

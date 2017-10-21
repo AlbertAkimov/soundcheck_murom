@@ -47,3 +47,7 @@ body {
 .has-error {
     color: red
 }
+
+.button-move {
+    margin-left: 220px;
+}

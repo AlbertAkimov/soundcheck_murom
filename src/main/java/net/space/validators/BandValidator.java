@@ -34,24 +34,18 @@ public class BandValidator implements Validator {
 
         Band band = (Band) target;
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-        List<List<Band>> lists = bandService.lists();
+        List<Band> lists = bandService.getListObject();
 
-        for (List<Band> bands : lists) {
-            for(Band iBand : bands) {
-                if(dateFormat.format(band.getDateBand()).equals(dateFormat.format(iBand.getDateBand()))) {
+        for(Band iBand : lists) {
+            if(dateFormat.format(band.getDateBand()).equals(dateFormat.format(iBand.getDateBand()))) {
 
-                    if(band.getStartTime().equals(iBand.getStartTime().substring(0, 5))) {
-                        errors.rejectValue("startTime", "Для выбранной даты это время уже используется.");
-                    }
-
-                    if(band.getEndTime().equals(iBand.getEndTime().substring(0, 5))){
-                        errors.rejectValue("endTime", "Для выбранной даты это время уже используется.");
-                    }
+                if(band.getStartTime().equals(iBand.getStartTime().substring(0, 5))) {
+                    errors.rejectValue("startTime", "Для выбранной даты это время уже используется.");
                 }
 
-                if(errors.hasErrors())
-                    break;
-
+                if(band.getEndTime().equals(iBand.getEndTime().substring(0, 5))){
+                    errors.rejectValue("endTime", "Для выбранной даты это время уже используется.");
+                }
             }
 
             if(errors.hasErrors())
