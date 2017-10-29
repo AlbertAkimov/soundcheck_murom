@@ -22,6 +22,8 @@ public interface BandDao {
 
     public Band getBandById(int id);
 
+    public List<Band> getBandByNameBand(String nameBand);
+
     public List<List<Band>> lists();
 
     public List<Band> getListObject();

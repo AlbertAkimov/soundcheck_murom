@@ -1,4 +1,4 @@
--- Table: users
+/*-- Table: users
 CREATE TABLE users (
   id       INT          NOT NULL AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(255) collate utf8_unicode_ci NOT NULL,
@@ -33,7 +33,7 @@ INSERT INTO users VALUES (1, 'alberto', '123456789');
 INSERT INTO roles VALUES (1, 'ROLE_USER');
 INSERT INTO roles VALUES (2, 'ROLE_ADMIN');
 
-INSERT INTO user_roles VALUES (1, 2);
+INSERT INTO user_roles VALUES (1, 2);*/
 
-/*UPDATE user_roles r JOIN users u ON u.id = r.user_id
-set role_id = 2*/
+UPDATE user_roles r JOIN users u ON u.id = r.user_id
+set role_id = 2

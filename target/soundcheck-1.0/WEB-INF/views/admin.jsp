@@ -52,6 +52,10 @@
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
     <div id="error-user"></div>
     <div id="testing">
+        <form class="well form-search">
+            <input type="text" class="input-medium search-query">
+            <button type="submit" class="btn">Поиск</button>
+        </form>
         <table class="table table-bordered table-hover table-striped table-condensed" align="center">
             <tr>
                 <th width="30">№</th>
@@ -138,6 +142,9 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
+                        <div class="has-error">
+                            <form:errors path="nameBand"></form:errors>
                         </div>
                     </div>
                 </td>
@@ -260,7 +267,6 @@
 <script type="text/javascript">
     $(function () {
         $('#datetimepicker3').datetimepicker({
-            defaultTime: '12:00',
             format: 'HH:mm'
         });
     });

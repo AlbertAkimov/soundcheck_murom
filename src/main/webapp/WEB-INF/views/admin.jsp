@@ -139,6 +139,9 @@
                             </div>
                         </div>
                         </div>
+                        <div class="has-error">
+                            <form:errors path="nameBand"></form:errors>
+                        </div>
                     </div>
                 </td>
             </tr>

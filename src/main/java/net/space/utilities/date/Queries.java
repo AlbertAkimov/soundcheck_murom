@@ -15,4 +15,6 @@ public class Queries {
     public static final String CONTACT_QUERY = "from Contact";
 
     public static final String ACTUAL_DATE_OF_BAND = "SELECT * FROM band WHERE DATE_BAND >= curdate()";
+
+    public static final String GET_BAND_BY_NAME = "SELECT";
 }

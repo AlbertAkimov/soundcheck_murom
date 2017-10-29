@@ -155,4 +155,17 @@ public class BandDaoImpl implements BandDao {
 
         return timeUtils.convertTimeOfList();
     }
+
+    /**
+     *
+     * @param nameBand
+     * @return
+     */
+
+    @Override
+    @SuppressWarnings("unchecked")
+    public List<Band> getBandByNameBand(String nameBand) {
+        Session session = this.sessionFactory.getCurrentSession();
+        return (List<Band>) session.createSQLQuery("SELECT * FROM band WHERE NAME_BAND =" + "'" + nameBand + "'").addEntity(Band.class).list();
+    }
 }

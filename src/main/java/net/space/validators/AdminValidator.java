@@ -5,6 +5,7 @@ import net.space.service.BandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
+import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
 import java.text.SimpleDateFormat;
@@ -38,8 +39,16 @@ public class AdminValidator implements Validator {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         List<Band> lists = bandService.getListObject();
 
+        if (band.getNameBand().length() < 4 || band.getNameBand().length() > 14)
+            errors.rejectValue("nameBand", "This.Size.nameBand");
+
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors,"nameBand", "This.nameBand.is.Required");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors,"dateBand", "This.nameBand.is.Required");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors,"startTime", "This.nameBand.is.Required");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors,"endTime", "This.nameBand.is.Required");
+
         for(Band iBand : lists) {
-            if (iBand.getId() != band.getId()) {
+            if (iBand.getId() != band.getId() && band.getStartTime() != null && band.getEndTime() != null && band.getDateBand() != null) {
                 if (dateFormat.format(band.getDateBand()).equals(dateFormat.format(iBand.getDateBand()))) {
 
                     if (band.getStartTime().equals(iBand.getStartTime().substring(0, 5))) {
@@ -59,9 +68,11 @@ public class AdminValidator implements Validator {
         // Нужно проверить дату, если она меньше текущей то отказываем
 
         for(Band iBand : lists) {
-            if(band.getDateBand().before(new Date())) {
-                errors.rejectValue("dateBand", "This.Date.is.less.than.current");
-                break;
+            if(band.getDateBand() != null) {
+                if (band.getDateBand().before(new Date())) {
+                    errors.rejectValue("dateBand", "This.Date.is.less.than.current");
+                    break;
+                }
             }
         }
     }

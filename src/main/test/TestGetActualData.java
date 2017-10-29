@@ -25,7 +25,6 @@ public class TestGetActualData {
     @SuppressWarnings("unchecked")
     public void getActulDataFromBand() {
         Session session = HibernateUtil.getSession();
-        Transaction transaction = session.beginTransaction();
 
         try {
             List<Band> bands = session.createSQLQuery("SELECT * FROM band WHERE DATE_BAND = curdate()")

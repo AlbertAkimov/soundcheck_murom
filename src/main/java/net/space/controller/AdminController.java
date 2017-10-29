@@ -69,6 +69,9 @@ public class AdminController {
         if(bindingResult.hasErrors())
             return "admin";
 
+        if(band.getComment().isEmpty())
+            band.setComment("Репетиция");
+
         if(band.getId() == 0) {
             band.setUserID(userService.getIDCurrentLoggedUser(this.userService.getCurrentLoggedUser()));
             this.service.addBand(BandDateUtils.breakADate(band));
@@ -102,8 +105,15 @@ public class AdminController {
 
     @RequestMapping(value = "edit/{id}")
     public String editBand(@PathVariable("id") int id, Model model) {
-
         model.addAttribute("band", this.service.getBandById(id));
+        model.addAttribute("listBand", this.service.getListObject());
+
+        return "admin";
+    }
+
+    @RequestMapping(value = "find/{nameBand}")
+    public String findBandByNameBand(@PathVariable("nameBand") String nameBand, Model model) {
+        model.addAttribute("band", this.service.getBandByNameBand(nameBand));
         model.addAttribute("listBand", this.service.getListObject());
 
         return "admin";
