@@ -44,7 +44,7 @@
 </div>
 
 <div align="center">
-    <h2> Подробная таблица рабочего времени</h2>
+    <h2>Подробная таблица рабочего времени</h2>
 </div>
 
 <c:if test="${!empty listBand}">
@@ -54,18 +54,18 @@
     <div id="testing">
         <table class="table table-bordered table-hover table-striped table-condensed" align="center">
             <tr>
-                <th width="30">№</th>
-                <th width="30">Пользователь</th>
-                <th width="40">Дата создания</th>
-                <th width="120">Имя группы</th>
-                <th width="40">Дата работы</th>
-                <th width="50">Начало</th>
-                <th width="50">Завершение</th>
-                <th width="50">Кол-во часов</th>
-                <th width="60">Сумма</th>
-                <th width="100">Деятельность</th>
-                <th width="50">Изменить</th>
-                <th width="50">Удалить</th>
+                <th width="30" style="text-align:center">ID</th>
+                <th width="30" style="text-align:center">USER ID</th>
+                <th width="40" style="text-align:center">Дата создания</th>
+                <th width="120" style="text-align:center">Имя группы</th>
+                <th width="40" style="text-align:center">Дата работы</th>
+                <th width="50" style="text-align:center">Начало</th>
+                <th width="50" style="text-align:center">Завершение</th>
+                <th width="50" style="text-align:center">Кол-во часов</th>
+                <th width="60" style="text-align:center">Сумма</th>
+                <th width="100" style="text-align:center">Деятельность</th>
+                <th width="8" style="text-align:center"></th>
+                <th width="8" style="text-align:center"></th>
             </tr>
 
             <c:forEach items="${listBand}" var="band">
@@ -80,8 +80,8 @@
                     <td id="t-countHours">${band.countHours}</td>
                     <td id="t-price">${band.price}</td>
                     <td id="t-comment">${band.comment}</td>
-                    <td><a href="<c:url value="/edit/${band.id}" />">Изменить</a> </td>
-                    <td><a href="<c:url value="/remove/${band.id}" />">Удалить</a> </td>
+                    <td><a href="<c:url value="/edit/${band.id}"/>" class="glyphicon glyphicon-pencil" style="color: #2e2d2d"></a> </td>
+                    <td><a href="<c:url value="/remove/${band.id}" />" class="glyphicon glyphicon-remove" style="color: #ac2925"></a> </td>
                 </tr>
             </c:forEach>
         </table>
@@ -238,6 +238,34 @@
                         <div class="button-move">
                         <input type="submit" class="btn btn-lg btn-primary"
                                value="<spring:message text="Добавить"/>" align="center"/>
+                            <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Показать всплывающее окно</button>
+                            <div id="myModal" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+                                            <h4 class="modal-title">Поиск</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class='input-group date'>
+                                                                <input type='text' class="form-control"/>
+                                                                <span class="input-group-addon"/>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="has-error">
+                                                    <form:errors path="nameBand"></form:errors>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </c:if>
                 </td>

@@ -70,7 +70,7 @@ public class AdminValidator implements Validator {
         for(Band iBand : lists) {
             if(iBand.getId() != band.getId()) {
                 if (band.getDateBand() != null) {
-                    if (band.getDateBand().before(new Date())) {
+                    if (band.getDateBand().before(new Date()) || band.getDateBand().equals(new Date())) {
                         errors.rejectValue("dateBand", "This.Date.is.less.than.current");
                         break;
                     }
