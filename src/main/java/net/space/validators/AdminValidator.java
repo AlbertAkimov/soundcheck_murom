@@ -68,10 +68,12 @@ public class AdminValidator implements Validator {
         // Нужно проверить дату, если она меньше текущей то отказываем
 
         for(Band iBand : lists) {
-            if(band.getDateBand() != null) {
-                if (band.getDateBand().before(new Date())) {
-                    errors.rejectValue("dateBand", "This.Date.is.less.than.current");
-                    break;
+            if(iBand.getId() != band.getId()) {
+                if (band.getDateBand() != null) {
+                    if (band.getDateBand().before(new Date())) {
+                        errors.rejectValue("dateBand", "This.Date.is.less.than.current");
+                        break;
+                    }
                 }
             }
         }

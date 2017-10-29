@@ -52,10 +52,6 @@
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
     <div id="error-user"></div>
     <div id="testing">
-        <form class="well form-search">
-            <input type="text" class="input-medium search-query">
-            <button type="submit" class="btn">Поиск</button>
-        </form>
         <table class="table table-bordered table-hover table-striped table-condensed" align="center">
             <tr>
                 <th width="30">№</th>

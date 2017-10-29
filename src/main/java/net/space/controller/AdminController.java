@@ -69,7 +69,7 @@ public class AdminController {
         if(bindingResult.hasErrors())
             return "admin";
 
-        if(band.getComment().isEmpty())
+        if(band.getComment() == null)
             band.setComment("Репетиция");
 
         if(band.getId() == 0) {
