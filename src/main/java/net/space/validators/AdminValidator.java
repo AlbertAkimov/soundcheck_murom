@@ -39,14 +39,6 @@ public class AdminValidator implements Validator {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         List<Band> lists = bandService.getListObject();
 
-        if (band.getNameBand().length() < 4 || band.getNameBand().length() > 14)
-            errors.rejectValue("nameBand", "This.Size.nameBand");
-
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors,"nameBand", "This.nameBand.is.Required");
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors,"dateBand", "This.nameBand.is.Required");
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors,"startTime", "This.nameBand.is.Required");
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors,"endTime", "This.nameBand.is.Required");
-
         for(Band iBand : lists) {
             if (iBand.getId() != band.getId() && band.getStartTime() != null && band.getEndTime() != null && band.getDateBand() != null) {
                 if (dateFormat.format(band.getDateBand()).equals(dateFormat.format(iBand.getDateBand()))) {
@@ -62,19 +54,6 @@ public class AdminValidator implements Validator {
 
                 if (errors.hasErrors())
                     break;
-            }
-        }
-
-        // Нужно проверить дату, если она меньше текущей то отказываем
-
-        for(Band iBand : lists) {
-            if(iBand.getId() != band.getId()) {
-                if (band.getDateBand() != null) {
-                    if (band.getDateBand().before(new Date()) || band.getDateBand().equals(new Date())) {
-                        errors.rejectValue("dateBand", "This.Date.is.less.than.current");
-                        break;
-                    }
-                }
             }
         }
     }
