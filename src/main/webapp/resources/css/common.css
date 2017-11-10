@@ -49,5 +49,10 @@ body {
 }
 
 .button-move {
-    margin-left: 220px;
+    margin-left: 120px;
+}
+
+.table-scroll {
+    overflow: scroll;
+    height: 280px;
 }

@@ -32,7 +32,8 @@ function get_ajax() {
         success: function (data) {
             $("#testing").html("");
 
-            if(data.status === "SUCCESS") {
+            if (data.status === "SUCCESS") {
+                getFilteredData
                 var json = "<table class='table table-bordered table-hover table-striped table-condensed'>" +
                     "<tr>" +
                     "<th width='30'>№</th>" +
@@ -76,7 +77,7 @@ function fire_ajax_submit() {
     band["endTime"] = $("#endTime").val();
     band["comment"] = $("#view").val();
 
-    if( band.nameBand === "" ||
+    if (band.nameBand === "" ||
         band.dateBand === "" ||
         band.startTime === "" ||
         band.endTime === "") {
@@ -150,53 +151,53 @@ function refresh() {
         cache: false,
         timeout: 600000,
         success: function (data) {
-            if(data.status === "SUCCESS") {
-                var json =  "<section id='dates' class='full-wrapper parallax-wrapper dates'>" +
-                            "<div class='parallax' data-velocity='-.3' data-fit='0'>" +
-                            "<div class='front-content dates'>" +
-                            "<h1>Время</h1>" +
-                            "<div class='spacer'></div>" +
-                            "<div class='dates-wrapper'>";
+            if (data.status === "SUCCESS") {
+                var json = "<section id='dates' class='full-wrapper parallax-wrapper dates'>" +
+                    "<div class='parallax' data-velocity='-.3' data-fit='0'>" +
+                    "<div class='front-content dates'>" +
+                    "<h1>Время</h1>" +
+                    "<div class='spacer'></div>" +
+                    "<div class='dates-wrapper'>";
 
                 json += "<ul>";
 
                 $("#albert").html("");
 
-                for(i = 0; i < data.result.length; i++) {
+                for (i = 0; i < data.result.length; i++) {
 
                     json += "<li>";
 
                     var bands = data.result[i];
 
-                    for(j = 0; j < bands.length; j++) {
+                    for (j = 0; j < bands.length; j++) {
                         json += "<div class='date-box'>" +
-                                    "<div class='info date'>" +
-                                        "<div class='day' id='band-day'>" + bands[j].day + "</div>" +
-                                        "<div class='month' id='band-month'>" +bands[j].month + "</div>" +
-                                        "<div class='year' id='band-year'>" +bands[j].year + "</div>" +
-                                    "</div>" +
-                                    "<div class='info'>" +
-                                        "<div class='city' id='band-name'>" +bands[j].nameBand + "</div>" +
-                                        "<div class='place' id='band-comment'><div class='ico'></div>" +bands[j].comment+ "</div>" +
-                                        "<div class='time' id='band-time'><div class='ico'></div>" + "c " +bands[j].startTime + " до " +bands[j].endTime+ "</div>" +
-                                    "</div>" +
-                                    "<div class='clear'></div>" +
-                                "</div>";
+                            "<div class='info date'>" +
+                            "<div class='day' id='band-day'>" + bands[j].day + "</div>" +
+                            "<div class='month' id='band-month'>" + bands[j].month + "</div>" +
+                            "<div class='year' id='band-year'>" + bands[j].year + "</div>" +
+                            "</div>" +
+                            "<div class='info'>" +
+                            "<div class='city' id='band-name'>" + bands[j].nameBand + "</div>" +
+                            "<div class='place' id='band-comment'><div class='ico'></div>" + bands[j].comment + "</div>" +
+                            "<div class='time' id='band-time'><div class='ico'></div>" + "c " + bands[j].startTime + " до " + bands[j].endTime + "</div>" +
+                            "</div>" +
+                            "<div class='clear'></div>" +
+                            "</div>";
                     }
 
                     json += "</li>";
                 }
                 json += "</ul>" +
-                        "</div>" +
+                    "</div>" +
                     "<div class='controller'>" +
-                        "<ul class='dots'>";
+                    "<ul class='dots'>";
 
                 json += "</ul>";
 
                 json += "</div>" +
                     "<div class='dates-nav'>" +
-                        "<div class='next'></div>" +
-                        "<div class='prev'></div>" +
+                    "<div class='next'></div>" +
+                    "<div class='prev'></div>" +
                     "</div>" +
                     "</div>" +
                     "<div class='square-bg'></div>" +
@@ -225,6 +226,19 @@ $(document).ready(function () {
 
 });
 
+$(document).ready(function () {
+
+    $("#admin-filter").submit(function (event) {
+
+        //stop submit the form, we will post it manually.
+        event.preventDefault();
+
+        getFilteredData();
+
+    });
+
+});
+
 function getMessage() {
 
     var message = {};
@@ -233,7 +247,7 @@ function getMessage() {
     message["email"] = $("#email").val();
     message["message"] = $("#comments").val();
 
-    if(message.nameAuthor === "" ||
+    if (message.nameAuthor === "" ||
         message.email === "" ||
         message.message === "") {
         return;
@@ -257,6 +271,91 @@ function getMessage() {
 
             else {
                 $("#message-send").html("Ошибка отправки сообщения..");
+            }
+        }
+    });
+}
+
+function getFilteredData() {
+
+    var filter = {};
+
+    filter["nameBand"] = $("#band").val();
+    filter["dateBand"] = $("#firstDate").val();
+
+    /*    if(filter.band === "" ||
+            filter.firstDate === "") {
+            return;
+        }*/
+
+    if (filter.nameBand === "" && filter.dateBand === "") {
+        return;
+    }
+
+    /*$("#message-send").html("Отправка сообщения..");*/
+
+    $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        url: "/filter",
+        data: JSON.stringify(filter),
+        dataType: 'json',
+        cache: false,
+        timeout: 600000,
+        success: function (data) {
+
+            if (data.status === "SUCCESS") {
+                var json = "<div class=\"table-responsive\">\n" +
+                    "<div class=\"table-scroll\">\n" +
+                    "<table class=\"table table-striped\">\n" +
+                    "<thead>\n" +
+                    "<tr>\n" +
+                    "<th width=\"30\">ID</th>\n" +
+                    "<th width=\"30\">USER ID</th>\n" +
+                    "<th width=\"40\">Дата создания</th>\n" +
+                    "<th width=\"120\">Группа</th>\n" +
+                    "<th width=\"40\">Дата работы</th>\n" +
+                    "<th width=\"50\">Начало</th>\n" +
+                    "<th width=\"50\">Завершение</th>\n" +
+                    "<th width=\"50\">Часы</th>\n" +
+                    "<th width=\"60\">Сумма</th>\n" +
+                    "<th width=\"100\">Деятельность</th>\n" +
+                    "<th width=\"8\"></th>\n" +
+                    "<th width=\"8\"></th>\n" +
+                    "</tr>\n" +
+                    "</thead>"
+
+                for (i = 0; i < data.result.length; ++i) {
+
+                    json += "<tbody>" +
+                        "<tr>" +
+                        "<td>" + data.result[i].id + "</td>" +
+                        "<td>" + data.result[i].userID + "</td>" +
+                        "<td>" + data.result[i].createDate + "</td>" +
+                        "<td>" + data.result[i].nameBand + "</td>" +
+                        "<td>" + data.result[i].dateBand + "</td>" +
+                        "<td>" + data.result[i].startTime + "</td>" +
+                        "<td>" + data.result[i].endTime + "</td>" +
+                        "<td>" + data.result[i].countHours + "</td>" +
+                        "<td>" + data.result[i].price + "</td>" +
+                        "<td>" + data.result[i].comment + "</td>" +
+                        "<td>" +
+                        "<a class='glyphicon glyphicon-pencil' href='/edit/1'>" +
+                        "</a>" +
+                        "</td>"
+
+                }
+                json += "</c:forEach>" +
+                    "</table>" +
+                    "</div>" +
+                    "</div>"
+                $('#testing').html(json);
+
+
+            }
+
+            else {
+                $("#error-message-filter").html("Ошибка отправки сообщения..");
             }
         }
     });

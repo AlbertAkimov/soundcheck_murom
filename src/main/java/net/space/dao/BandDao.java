@@ -1,7 +1,9 @@
 package net.space.dao;
 
 import net.space.model.Band;
+import org.springframework.data.jpa.repository.Query;
 
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -14,19 +16,22 @@ import java.util.List;
 
 public interface BandDao {
 
-    public void addBand(Band band);
+    void addBand(Band band);
 
-    public void updateBand(Band band);
+    void updateBand(Band band);
 
-    public void removeBand(int id);
+    void removeBand(int id);
 
-    public Band getBandById(int id);
+    Band getBandById(int id);
 
-    public List<Band> getBandByNameBand(String nameBand);
+    List<Band> getBandByNameBand(String nameBand);
 
-    public List<List<Band>> lists();
+    List<List<Band>> lists();
 
-    public List<Band> getListObject();
+    List<Band> getListObject();
 
-    public List<Band> getPersonalList();
+    List<Band> getPersonalList();
+
+    List<Band> getBandByParam(HashMap<String, Object> param);
+
 }

@@ -5,6 +5,7 @@ import net.space.model.Band;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -70,5 +71,11 @@ public class BandServiceImpl implements BandService{
     @Transactional
     public List<Band> getPersonalList() {
         return this.bandDao.getPersonalList();
+    }
+
+    @Override
+    @Transactional
+    public List<Band> getBandByParam(HashMap<String, Object> param) {
+        return this.bandDao.getBandByParam(param);
     }
 }

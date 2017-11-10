@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="soundcheck:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="soundcheck-1.0.war">
+    <root id="archive" name="spaces.war">
       <element id="artifact" artifact-name="soundcheck:war exploded" />
     </root>
   </artifact>

@@ -9,12 +9,14 @@ import net.space.utilities.date.Queries;
 import net.space.utilities.date.TimeUtils;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
@@ -154,6 +156,14 @@ public class BandDaoImpl implements BandDao {
         TimeUtils timeUtils = new TimeUtils(list);
 
         return timeUtils.convertTimeOfList();
+    }
+
+    @SuppressWarnings("unchecked")
+    @Override
+    public List<Band> getBandByParam(HashMap<String, Object> param) {
+        Session session = this.sessionFactory.getCurrentSession();
+        List<Band> bands = session.createCriteria(Band.class).add(Restrictions.and(Restrictions.allEq(param))).list();
+        return bands;
     }
 
     /**
