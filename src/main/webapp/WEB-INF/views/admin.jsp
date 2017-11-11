@@ -31,6 +31,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
+    <style>
+        body {
+            background-size: cover;
+            background: #333646 url(../../resources/soundcheck/img/background/setwalls.ru-18005.jpg) no-repeat fixed center center;
+        }
+    </style>
+
     <title>Admin</title>
 
 </head>
@@ -64,51 +71,53 @@
 
 <div class="container-fluid">
     <div class="row">
-        <form method="post" id="admin-filter"  action="${pageContext.request.contextPath}/admin/filter">
+        <form method="post" id="admin-filter">
             <div class="col-sm-3 col-md-2 sidebar">
-                <div class="well" style="max-width: 400px;  auto: 10px;">
                 <ul class="nav nav-sidebar">
                     <%--<li class="active"><a href="#">Overview</a></li>--%>
                     <li>
                         <div class="row">
-                            <div class="col-sm-9">
-                                <label for="band" style="margin-left: 20px">Группа</label>
-                                <input type='text' class="form-control" id="band" style="margin-left: 20px"/>
+                            <div class="col-sm-11">
+                                <label for="band" style="margin-left: 15px">Группа</label>
+                                <input type='text' class="form-control" id="band" style="margin-left: 15px"/>
                             </div>
                         </div>
                     </li>
+                    <br>
                     <li>
-                        <label for="firstDate" style="margin-left: 20px">Период (с)</label>
+                        <label for="firstDate" style="margin-left: 15px">Период (с)</label>
                         <div class="row">
-                            <div class="col-sm-10">
+                            <div class="col-sm-11">
                                 <div class="form-group">
                                     <div class='input-group date' id='datetimepicker1'>
-                                        <input class="form-control" id="firstDate" style="margin-left: 20px"/>
+                                        <input class="form-control" id="firstDate" style="margin-left: 15px"/>
                                         <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-calendar"  style="margin-left: 20px"></span>
+                                            <span class="glyphicon glyphicon-calendar" style="margin-left: 15px"></span>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
+                    <br>
                     <li>
-<%--                        <label for="secondDate" style="margin-left: 20px">Период (до)</label>
+                        <label for="secondDate" style="margin-left: 15px">Период (до)</label>
                         <div class="row">
-                            <div class="col-sm-10">
+                            <div class="col-sm-11">
                                 <div class="form-group">
                                     <div class='input-group date' id='datetimepicker5'>
-                                        <input type='text' class="form-control" id="secondDate" style="margin-left: 20px"/>
+                                        <input type='text' class="form-control" id="secondDate"
+                                               style="margin-left: 15px"/>
                                         <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-calendar"  style="margin-left: 20px"></span>
+                                            <span class="glyphicon glyphicon-calendar"
+                                                  style="margin-left: 15px"></span>
                                         </span>
                                     </div>
                                 </div>
                             </div>
-                        </div>--%>
+                        </div>
                     </li>
                 </ul>
-                </div>
                 <button type="submit" class="btn btn-lg btn-primary btn-block">Найти</button>
                 <ul class="nav nav-sidebar">
                     <li><a href="">Nav item</a></li>
@@ -125,8 +134,7 @@
             </div>
         </form>
 
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"
-        style="background-image: url(/resources/soundcheck/img/background/setwalls.ru-18005.jpg)">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
 
             <c:if test="${pageContext.request.userPrincipal.name != null}">
@@ -138,7 +146,7 @@
             </h3>
             </c:if>
 
-            <h2 class="sub-header" align="center">Подробная таблица рабочего времени</h2>
+            <h3 class="sub-header" align="center">Подробная таблица рабочего времени</h3>
 
             <c:if test="${!empty listBand}">
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
@@ -146,7 +154,7 @@
             <div id="testing">
                 <div class="table-responsive">
                     <div class="table-scroll">
-                        <table class="table table-striped">
+                        <table class="table table-striped" style="opacity: 0.7;">
                             <thead>
                             <tr>
                                 <th width="30">ID</th>
@@ -192,155 +200,129 @@
             </c:if>
 
             <c:url var="addAction" value="/band/add"/>
-
+            <br>
             <form:form action="${addAction}" commandName="band" id="admin">
-            <div class="well" style="max-width: 400px;  auto: 10px;">
-                <h4>Форма регистрации и редактирования</h4>
-                <c:if test="${!empty band.nameBand}">
+            <h3 align="center">Форма регистрации и редактирования</h3>
+            <c:if test="${!empty band.nameBand}">
 
-                    <form:label path="id" class="control-label">
-                        <spring:message text="Идентификатор"/>
-                    </form:label>
+            <form:label path="id" class="control-label">
+                <spring:message text="Идентификатор"/>
+            </form:label>
 
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <div class='input-group date'>
-                                    <form:input type='text' class="form-control" path="id"
-                                                readonly="true" size="8" disabled="true" id="id"/>
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class='input-group date'>
+                            <form:input type='text' class="form-control" path="id"
+                                        readonly="true" size="8" disabled="true" id="id"/>
                         </div>
                     </div>
-
-                    <form:hidden path="id"/>
-
-                </c:if>
-
-                <form:label path="nameBand" class="control-label">
-                    <spring:message text="Имя группы"/>
-                </form:label>
-
-                <div class="row">
-                    <div class="col-sm-12">
-                        <form:input type='text' class="form-control" path="nameBand" id="nameBand"/>
-                    </div>
                 </div>
-                <div class="has-error">
-                    <form:errors path="nameBand"></form:errors>
+            </div>
+
+                <form:hidden path="id"/>
+
+            </c:if>
+
+            <form:label path="nameBand" class="control-label">
+                <spring:message text="Имя группы"/>
+            </form:label>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <form:input type='text' class="form-control" path="nameBand" id="nameBand"/>
                 </div>
+            </div>
+            <div class="has-error">
+                <form:errors path="nameBand"></form:errors>
+            </div>
 
-                <form:label path="dateBand" class="control-label">
-                    <spring:message text="Дата работы"/>
-                </form:label>
+            <form:label path="dateBand" class="control-label">
+                <spring:message text="Дата работы"/>
+            </form:label>
 
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <div class='input-group date' id='datetimepicker2'>
-                                <form:input type='text' class="form-control" path="dateBand" id="dateBand"/>
-                                <span class="input-group-addon">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker2'>
+                            <form:input type='text' class="form-control" path="dateBand" id="dateBand"/>
+                            <span class="input-group-addon">
                                         <span class="glyphicon glyphicon-calendar"></span>
                                     </span>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="has-error">
-                    <form:errors path="dateBand"></form:errors>
-                </div>
+            </div>
+            <div class="has-error">
+                <form:errors path="dateBand"></form:errors>
+            </div>
 
-                <form:label path="startTime">
-                    <spring:message text="Время начала"/>
-                </form:label>
+            <form:label path="startTime">
+                <spring:message text="Время начала"/>
+            </form:label>
 
-                <div class="row">
-                    <div class='col-sm-12'>
-                        <div class="form-group">
-                            <div class='input-group date' id='datetimepicker3'>
-                                <form:input path="startTime" type='text' class="form-control"
-                                            id="startTime"/>
-                                <span class="input-group-addon">
+            <div class="row">
+                <div class='col-sm-4'>
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker3'>
+                            <form:input path="startTime" type='text' class="form-control"
+                                        id="startTime"/>
+                            <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-time"></span>
                             </span>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="has-error">
-                    <form:errors path="startTime"></form:errors>
-                </div>
+            </div>
+            <div class="has-error">
+                <form:errors path="startTime"></form:errors>
+            </div>
 
-                <form:label path="endTime">
-                    <spring:message text="Время завершения"/>
-                </form:label>
+            <form:label path="endTime">
+                <spring:message text="Время завершения"/>
+            </form:label>
 
-                <div class="row">
-                    <div class='col-sm-12'>
-                        <div class="form-group">
-                            <div class='input-group date' id='datetimepicker4'>
-                                <form:input path="endTime" type='text' class="form-control" id="endTime"/>
-                                <span class="input-group-addon">
+            <div class="row">
+                <div class='col-sm-4'>
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker4'>
+                            <form:input path="endTime" type='text' class="form-control" id="endTime"/>
+                            <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-time"></span>
                             </span>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="has-error">
-                    <form:errors path="endTime"></form:errors>
-                </div>
+            </div>
+            <div class="has-error">
+                <form:errors path="endTime"></form:errors>
+            </div>
 
-                <c:if test="${!empty band.dateBand}">
+            <c:if test="${!empty band.dateBand}">
+            <div class="row">
+                <div class="col-sm-4">
                     <input type="submit" class="btn btn-lg btn-primary btn-block"
                            value="<spring:message text="Редактировать"/>"/>
                     <form action="${pageContext.request.contextPath}/canceled">
                         <input type="submit" class="btn btn-primary btn-danger btn-block"
                                value="<spring:message text="Отмена"/>"/>
+                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                     </form>
                     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-                </c:if>
-                <c:if test="${empty band.dateBand}">
+                </div>
+            </div>
+            </c:if>
 
+            <c:if test="${empty band.dateBand}">
+            <div class="row">
+                <div class="col-sm-4">
                     <input type="submit" class="btn btn-lg btn-primary btn-block"
                            value="<spring:message text="Добавить"/>" align="center"/>
-                    <%--                    <button class="btn btn-info btn-lg" type="button" data-toggle="modal"
-                                                data-target="#myModal">Показать всплывающее окно
-                                        </button>--%>
-                    <div id="myModal" class="modal fade">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button class="close" type="button" data-dismiss="modal">×
-                                    </button>
-                                    <h4 class="modal-title">Поиск</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <div class='input-group date'>
-                                                        <input type='text' class="form-control"/>
-                                                        <span class="input-group-addon"/>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="has-error">
-                                            <form:errors path="nameBand"></form:errors>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </c:if>
-
-                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                </div>
             </div>
+            </c:if>
+
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
             </form:form>
 </body>
 

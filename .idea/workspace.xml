@@ -7,373 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea6f57f5-5f6c-4803-8a07-024eb7faa4bd" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_25.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_9_2_1003_jdbc4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/appconfig-data.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/appconfig-mvc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/appconfig-root.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/appconfig-security.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/appconfig-data-test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/appconfig-mvc-test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/appconfig-root-test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/appconfig-security-test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/database.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/database/mysql/contactSql.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/database/mysql/database.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/database/mysql/initDB.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/database/mysql/sql.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/database/postgresql/band.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/database/postgresql/contactSql.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/database/postgresql/database.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/mail.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/controller/BandController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/controller/ContactController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/controller/RestBandController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/controller/UserController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/dao/BandDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/dao/BandDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/dao/ContactDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/dao/ContactDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/dao/RoleDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/dao/UserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/model/Band.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/model/Contact.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/model/Role.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/model/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/service/BandService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/service/BandServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/service/ContactService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/service/ContactServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/service/SecurityService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/service/SecurityServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/service/UserDetailsServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/service/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/service/UserServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/utilities/EmailAddress.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/utilities/converter/ListConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/utilities/date/BandDateUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/utilities/date/DateUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/utilities/date/Queries.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/utilities/date/TimeUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/utilities/message/errors/MessageErrors.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/validators/BandValidator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/validators/ContactValidator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/validators/UserValidator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/net/space/validators/json/JsonResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/postgresql.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/classes/validation.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/activation-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/antlr-2.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/aspectjrt-1.8.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/bootstrap-3.3.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/classmate-1.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/commons-dbcp-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/commons-pool-1.5.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/hibernate-commons-annotations-4.0.5.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/hibernate-core-4.3.8.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/hibernate-entitymanager-4.3.8.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/hibernate-validator-5.2.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/jackson-core-2.6.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/jandex-1.1.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/javassist-3.18.1-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/javax.el-2.2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/javax.el-api-2.2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/javax.mail-1.5.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/jboss-logging-3.2.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/jcl-over-slf4j-1.7.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/jquery-2.2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/junit-4.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/logback-classic-1.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/logback-core-1.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/mysql-connector-java-5.1.25.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/postgresql-9.2-1003-jdbc4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/slf4j-api-1.7.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-aop-4.3.10.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-beans-4.3.10.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-context-4.3.10.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-context-support-4.3.10.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-core-4.3.10.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-data-commons-1.10.2.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-data-jpa-1.8.2.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-expression-4.3.10.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-jdbc-4.0.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-orm-4.0.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-security-config-4.0.2.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-security-core-4.0.2.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-security-web-4.0.2.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-test-4.3.10.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-tx-4.0.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-web-4.3.10.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/spring-webmvc-4.3.10.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/lib/xml-apis-1.0.b2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/views/admin.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/views/fulllist.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/views/login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/views/main.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/views/personalPage.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/views/registration.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/css/common.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/MIT-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/build/jquery.datetimepicker.full.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/build/jquery.datetimepicker.full.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/build/jquery.datetimepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/build/jquery.datetimepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/datetimepicker.jquery.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/doc.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/jquery.datetimepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/jquery.datetimepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/jquery.datetimepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/screen/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/screen/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/screen/3.1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/screen/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/screen/4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/screen/5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/screen/6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/tests/input_in_container_fixed_to_bottom_of_viewport.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/tests/input_in_container_fixed_to_top_of_viewport.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/datepicker/yarn.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/img/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/img/mzkds.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/img/test.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/newdatepicker/datepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/newdatepicker/datepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/audio/mp3/Daft_Punk_Giorgio_by_Moroder_Stellar_Dreams_Remix.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/audio/mp3/nightcrawler_genesis_feat-dana-jean-phoenix.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/audio/mp3/yosef_the_soul-run_away.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/blog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/color-picker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/color/black.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/color/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/color/green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/color/light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/color/orange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/color/purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/color/red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/color/turquoise.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/color/yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/isotope.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/css/sonorama.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/demo/author/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/demo/projects/single/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/doc/TOC.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/doc/crossdomain.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/doc/css.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/doc/extend.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/doc/faq.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/doc/html.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/doc/js.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/doc/misc.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/doc/usage.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/discography/disc-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/discography/disc-02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/discography/disc-03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/discography/thumb-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/discography/thumb-02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/discography/thumb-03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/gallery/thumb-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/gallery/thumb-02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/gallery/thumb-03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/gallery/thumb-04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/gallery/thumb-05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/gallery/thumb-06.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/gallery/thumb-07.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/gallery/thumb-08.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/gallery/thumb-09.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/gallery/thumb-10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/gallery/thumb-11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/gallery/thumb-12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/dark.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/dates-arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/dates-icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/disc-ico.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/gallery-photo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/gallery-video.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/light.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/menu-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/next-news.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/pause.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/picker-ico.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/play-pause-disc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/play.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/player-icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/prev-news.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/search.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/sell-platforms.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/slider-nav-next.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/slider-nav-prev.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/icons/social-icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/news/thumb-news-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/news/thumb-news-02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/news/thumb-news-03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/news/thumb-news-04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/news/thumb-news-05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/news/thumb-news-06.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/news/thumb-news-07.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/overlays/overlay-01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/overlays/overlay-02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/overlays/overlay-03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/overlays/overlay-04.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/overlays/overlay-05.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/overlays/overlay-06.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/overlays/overlay-07.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/overlays/overlay-08.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/overlays/overlay-09.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/overlays/overlay-10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/parallax/01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/parallax/02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/parallax/03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/parallax/_02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/slider/slider-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/slider/slider-02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/slider/slider-03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/img/slider/sonorama.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/color-picker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/discography.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/fancybox_loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/fancybox_loading@2x.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/fancybox_overlay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/fancybox_sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/fancybox_sprite@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/helpers/fancybox_buttons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/helpers/jquery.fancybox-buttons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/helpers/jquery.fancybox-buttons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/helpers/jquery.fancybox-media.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/helpers/jquery.fancybox-thumbs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/helpers/jquery.fancybox-thumbs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/jquery.fancybox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/jquery.fancybox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/fancybox/jquery.fancybox.pack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/form/ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/jquery-1.11.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/jquery.form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/jquery.hoverdir.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/jquery.isotope.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/jquery.mb.YTPlayer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/jquery.nav.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/jquery.scrolly.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/jquery.validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/news.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/player/audio.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/plugins.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/sonorama.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/LICENSE-MIT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/_notes/dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/changelog.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/dist/_notes/dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/dist/jquery.superslides.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/dist/jquery.superslides.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/dist/stylesheets/_notes/dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/dist/stylesheets/superslides.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/_notes/dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/constrained.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/custom-fx.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/custom-pagination.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/fade.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/images/_notes/dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/images/affinity.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/images/cinelli-front.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/images/cinelli.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/images/home-banner-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/images/people.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/images/surly.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/javascripts/_notes/dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/javascripts/application.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/javascripts/hammer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/javascripts/jquery.animate-enhanced.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/javascripts/jquery.easing.1.3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/multiple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/play.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/preserved-images.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/single.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/examples/touch.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/libs/_notes/dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/libs/jquery-loader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/libs/jquery/_notes/dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/libs/jquery/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/libs/qunit/_notes/dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/libs/qunit/qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/libs/qunit/qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/scss/_notes/dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/scss/superslides.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/src/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/src/_notes/dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/src/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/src/core_outro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/src/core_prototype.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/src/css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/src/fx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/src/image.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/src/intro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/src/outro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/src/pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/src/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/src/setup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/superslides.jquery.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/test/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/test/_notes/dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/test/superslides.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/superslides-0.6.2/test/superslides_test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/tweets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/vendor/jquery-1.10.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/soundcheck/js/vendor/modernizr-2.6.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/timepicker/dist/css/timepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/timepicker/dist/css/timepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/timepicker/dist/js/timepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/timepicker/dist/js/timepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/timepicker/dist/maps/timepicker.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/soundcheck-1.0/resources/timepicker/dist/maps/timepicker.min.js.map" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/space/dao/BandDao.class" afterPath="$PROJECT_DIR$/target/classes/net/space/dao/BandDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/space/dao/BandDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/net/space/dao/BandDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/space/service/BandService.class" afterPath="$PROJECT_DIR$/target/classes/net/space/service/BandService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/space/service/BandServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/net/space/service/BandServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/soundcheck_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/soundcheck_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/soundcheck_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/soundcheck_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soundcheck.iml" afterPath="$PROJECT_DIR$/soundcheck.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/space/dao/BandDao.java" afterPath="$PROJECT_DIR$/src/main/java/net/space/dao/BandDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/space/dao/BandDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/net/space/dao/BandDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/space/service/BandService.java" afterPath="$PROJECT_DIR$/src/main/java/net/space/service/BandService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/space/service/BandServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/net/space/service/BandServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/common.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/soundcheck/js/form/ajax.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/soundcheck/js/form/ajax.js" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -418,24 +53,13 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RestAdminController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/space/controller/RestAdminController.java">
+    <leaf>
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/space/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="band" pinned="false" current-in-tab="false">
-        <entry file="das://table:/e66fd80b/1b409bd4-18d2-4e64-a3fa-2fdc894e7ca3/soundcheck.band">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="464">
+              <caret line="110" column="23" lean-forward="true" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -443,21 +67,34 @@
       <file leaf-file-name="admin.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="128" column="95" lean-forward="false" selection-start-line="128" selection-start-column="95" selection-end-line="128" selection-end-column="95" />
+            <state relative-caret-position="493">
+              <caret line="74" column="50" lean-forward="false" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
               <folding>
-                <marker date="1510338974898" expanded="false" signature="4867:4884" ph="..." />
-                <marker date="1510338974898" expanded="false" signature="5056:5073" ph="..." />
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#li#1;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#li#2;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#td#10;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#script#3;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#script#4;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sonorama.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/soundcheck/css/sonorama.css">
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="1021" column="65" lean-forward="false" selection-start-line="1021" selection-start-column="44" selection-end-line="1021" selection-end-column="65" />
+            <state relative-caret-position="170">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="44" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -492,6 +129,7 @@
       <find>WHERE</find>
       <find>ERROR</find>
       <find>testing</find>
+      <find>Добавить</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -550,7 +188,6 @@
         <option value="$PROJECT_DIR$/src/main/java/net/space/dao/Test.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/test/TestJPARepository.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/soundcheck/js/form/ajax.js" />
         <option value="$PROJECT_DIR$/src/main/java/net/space/dao/TestJPA.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/space/dao/BandDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/space/dao/BandDaoImpl.java" />
@@ -558,6 +195,7 @@
         <option value="$PROJECT_DIR$/src/main/java/net/space/service/BandServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/test/TestHCQL.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/space/controller/RestAdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/soundcheck/js/form/ajax.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jsp" />
       </list>
     </option>
@@ -591,7 +229,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="203" />
     <option name="y" value="52" />
     <option name="width" value="1489" />
@@ -718,13 +356,6 @@
               <item name="soundcheck" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soundcheck" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soundcheck" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -760,20 +391,26 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="timepicker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="soundcheck" type="b2602c69:ProjectViewProjectNode" />
               <item name="soundcheck" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="timepicker" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -789,20 +426,20 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.35517243" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;PostgreSQL" />
-    <property name="SearchEverywhereHistoryKey" value="admin&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/WEB-INF/views/admin.jsp&#10;Admi&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/java/net/space/controller/RestAdminController.java&#10;admi&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/WEB-INF/views/admin.jsp&#10;ajax&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/resources/soundcheck/js/form/ajax.js&#10;фо&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/resources/soundcheck/js/form/ajax.js&#10;aja&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/resources/soundcheck/js/form/ajax.js&#10;фофч&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/resources/soundcheck/js/form/ajax.js&#10;common&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/resources/css/common.css&#10;ыщтщ&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/resources/soundcheck/js/sonorama.js&#10;фвьшт&#9;FILE&#9;file:///home/albert/my/project/soundcheck/src/main/webapp/WEB-INF/views/admin.jsp&#10;main&#9;FILE&#9;file:///home/albert/my/project/soundcheck/src/main/webapp/WEB-INF/views/main.jsp&#10;ba&#9;FILE&#9;file:///home/albert/my/project/soundcheck/src/main/java/net/space/model/Band.java&#10;ma&#9;FILE&#9;file:///home/albert/my/project/soundcheck/src/main/webapp/WEB-INF/views/main.jsp&#10;Ифтв&#9;PSI&#9;JAVA://net.space.model.Band&#10;ban&#9;PSI&#9;JAVA://net.space.model.Band" />
+    <property name="SearchEverywhereHistoryKey" value="lo&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/WEB-INF/views/login.jsp&#10;aja&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/resources/soundcheck/js/form/ajax.js&#10;admin&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/WEB-INF/views/admin.jsp&#10;Admi&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/java/net/space/controller/RestAdminController.java&#10;admi&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/WEB-INF/views/admin.jsp&#10;ajax&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/resources/soundcheck/js/form/ajax.js&#10;фо&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/resources/soundcheck/js/form/ajax.js&#10;фофч&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/resources/soundcheck/js/form/ajax.js&#10;common&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/resources/css/common.css&#10;ыщтщ&#9;FILE&#9;file://C:/Users/Its_s/IdeaProjects/soundcheck/src/main/webapp/resources/soundcheck/js/sonorama.js&#10;фвьшт&#9;FILE&#9;file:///home/albert/my/project/soundcheck/src/main/webapp/WEB-INF/views/admin.jsp&#10;main&#9;FILE&#9;file:///home/albert/my/project/soundcheck/src/main/webapp/WEB-INF/views/main.jsp&#10;ba&#9;FILE&#9;file:///home/albert/my/project/soundcheck/src/main/java/net/space/model/Band.java&#10;ma&#9;FILE&#9;file:///home/albert/my/project/soundcheck/src/main/webapp/WEB-INF/views/main.jsp&#10;Ифтв&#9;PSI&#9;JAVA://net.space.model.Band&#10;ban&#9;PSI&#9;JAVA://net.space.model.Band" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/validation_admin.properties" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/test" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Its_s\IdeaProjects\soundcheck\src\main\webapp\resources\soundcheck\img\background" />
       <recent name="C:\Users\Its_s\IdeaProjects\soundcheck\src\main\resources" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/js" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/css" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1183,7 +820,8 @@
       <workItem from="1510072783195" duration="7570000" />
       <workItem from="1510153683992" duration="9214000" />
       <workItem from="1510235285611" duration="8341000" />
-      <workItem from="1510330184521" duration="5969000" />
+      <workItem from="1510330184521" duration="6591000" />
+      <workItem from="1510388101062" duration="6500000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy">
       <created>1506249037437</created>
@@ -1263,7 +901,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184373000" />
+    <option name="totallyTimeSpent" value="191495000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1275,11 +913,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Azure Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Azure Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34594882" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1289,7 +927,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2521322" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42391303" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42391303" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1298,9 +936,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3206522" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18176973" sideWeight="0.48862407" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18336888" sideWeight="0.48862407" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23027718" sideWeight="0.51137596" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -1375,7 +1013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1383,14 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="5" column="31647" lean-forward="false" selection-start-line="5" selection-start-column="31647" selection-end-line="5" selection-end-column="31647" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="38" column="38" lean-forward="true" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1429,14 +1058,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/space/controller/RestBandController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -1463,7 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1478,7 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1493,7 +1112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1299">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1508,14 +1126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
-          <caret line="151" column="8" lean-forward="false" selection-start-line="151" selection-start-column="8" selection-end-line="151" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1569,21 +1179,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/soundcheck/js/form/ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="345" column="0" lean-forward="false" selection-start-line="345" selection-start-column="0" selection-end-line="345" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/test/TestGetActualData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <marker date="1508873085939" expanded="true" signature="651:697" ph="SELECT * FRO... band" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1599,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="148" column="5" lean-forward="true" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1607,7 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="555" column="29" lean-forward="false" selection-start-line="555" selection-start-column="29" selection-end-line="555" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1615,9 +1212,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="167" column="0" lean-forward="true" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-          <folding>
-            <marker date="1510334270065" expanded="true" signature="5197:5256" ph="SELECT * FRO... band" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1625,7 +1219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1633,10 +1226,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="827">
           <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="e#1657#1658#0" expanded="false" />
-            <element signature="e#1714#1715#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1652,14 +1241,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="165" column="11" lean-forward="false" selection-start-line="165" selection-start-column="11" selection-end-line="165" selection-end-column="11" />
-          <folding>
-            <element signature="e#6467#6468#0" expanded="true" />
-            <element signature="e#6515#6516#0" expanded="true" />
-            <element signature="e#6916#6917#0" expanded="true" />
-            <element signature="e#6947#6948#0" expanded="true" />
-            <element signature="e#10648#10649#0" expanded="true" />
-            <element signature="e#10678#10679#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1668,16 +1249,8 @@
         <state relative-caret-position="481">
           <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/space/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="43" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1685,11 +1258,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1510235369511" expanded="true" signature="433:469" ph="SELECT * FRO... band" />
-            <marker date="1510235369511" expanded="true" signature="562:620" ph="SELECT * FRO... band" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1697,7 +1265,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="33" column="15" lean-forward="false" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1705,7 +1272,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1733,6 +1299,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
           <caret line="1021" column="65" lean-forward="false" selection-start-line="1021" selection-start-column="44" selection-end-line="1021" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-258">
+          <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1744,23 +1317,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/space/controller/RestBandController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/space/controller/RestAdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="600">
+          <caret line="51" column="56" lean-forward="true" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/space/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="110" column="23" lean-forward="true" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/soundcheck/js/form/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="353" column="1" lean-forward="true" selection-start-line="353" selection-start-column="1" selection-end-line="353" selection-end-column="1" />
+          <folding>
+            <marker date="1510391015200" expanded="true" signature="11072:11086" ph="..." />
+            <marker date="1510391015200" expanded="true" signature="11087:11194" ph="..." />
+            <marker date="1510391015200" expanded="true" signature="11301:11308" ph="..." />
+            <marker date="1510391015200" expanded="true" signature="11301:11315" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="44" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="128" column="95" lean-forward="false" selection-start-line="128" selection-start-column="95" selection-end-line="128" selection-end-column="95" />
+        <state relative-caret-position="493">
+          <caret line="74" column="50" lean-forward="false" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
           <folding>
-            <marker date="1510338974898" expanded="false" signature="4867:4884" ph="..." />
-            <marker date="1510338974898" expanded="false" signature="5056:5073" ph="..." />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#li#1;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#li#2;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#10;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#3;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#4;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

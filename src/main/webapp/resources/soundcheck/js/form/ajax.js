@@ -276,6 +276,8 @@ function getMessage() {
     });
 }
 
+
+//Метод для фильтрации данных в асинхронном режиме
 function getFilteredData() {
 
     var filter = {};
@@ -283,16 +285,9 @@ function getFilteredData() {
     filter["nameBand"] = $("#band").val();
     filter["dateBand"] = $("#firstDate").val();
 
-    /*    if(filter.band === "" ||
-            filter.firstDate === "") {
-            return;
-        }*/
-
     if (filter.nameBand === "" && filter.dateBand === "") {
         return;
     }
-
-    /*$("#message-send").html("Отправка сообщения..");*/
 
     $.ajax({
         type: "POST",
@@ -340,22 +335,19 @@ function getFilteredData() {
                         "<td>" + data.result[i].price + "</td>" +
                         "<td>" + data.result[i].comment + "</td>" +
                         "<td>" +
-                        "<a class='glyphicon glyphicon-pencil' href='/edit/1'>" +
+                        "<a class='glyphicon glyphicon-pencil' style='color: #0a0a0a' href='/edit/" + data.result[i].id + "'>" +
+                        "</a>" +
+                        "</td>" +
+                        "<td>" +
+                        "<a class='glyphicon glyphicon-remove' style='color: #ac2925' href='/remove/" + data.result[i].id + "'>" +
                         "</a>" +
                         "</td>"
-
                 }
                 json += "</c:forEach>" +
                     "</table>" +
                     "</div>" +
                     "</div>"
                 $('#testing').html(json);
-
-
-            }
-
-            else {
-                $("#error-message-filter").html("Ошибка отправки сообщения..");
             }
         }
     });
